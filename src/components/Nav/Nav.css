@@ -1,0 +1,135 @@
+@import url("/src/assets/css/root.css");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #08032566;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar {
+    min-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+}
+
+.navbarRight {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.logo {
+    width: 160px;
+    height: 34px;
+}
+
+.navbarLeft {
+    display: flex;
+    align-items: center;
+}
+
+.navbarLeft .dropdown,
+button {
+    padding: 12px;
+}
+
+.navbarLeft button {
+    background-color: rgba(255, 0, 255, 0);
+    border: none;
+}
+
+i {
+    font-size: 16px;
+}
+
+.nav__link {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+}
+
+.nav__link:active .nav__link::after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+
+}
+
+.nav__link span {
+    color: #ffffff80;
+}
+
+.nav__link:hover span {
+    color: #fff;
+    transition: color 0.2s ease-in;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 24px 0px;
+}
+
+.dropdownMenu {
+    opacity: 0;
+    width: 0;
+}
+
+.dropdown:hover .dropdownMenu {
+    opacity: 1;
+    width: auto;
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    padding: 15px 0px;
+    top: 100%;
+    left: 0;
+    transition: all 0.3s ease-in;
+    flex-direction: column;
+    background-color: #08032566;
+
+}
+
+.dropdownLink {
+    position: relative;
+    padding: 10px 35px 5px;
+    color: #fff;
+}
+.dropdownLink::after{
+    content: "";
+    width: 0%;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+}
+.dropdownLink:hover::after{
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff80; 
+    transition: all 0.5s ease;
+}
+.salam {
+    opacity: 0;
+}
