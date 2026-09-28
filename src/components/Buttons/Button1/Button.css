@@ -1,0 +1,11 @@
+.buttonDefault1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color:#D92B4C;
+    transform: skew(-5deg,0deg);
+    border: none;
+    padding: 15px 30px;
+    color: #fff;
+}

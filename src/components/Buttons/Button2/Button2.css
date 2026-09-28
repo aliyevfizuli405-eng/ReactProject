@@ -1,0 +1,15 @@
+.buttonDefault2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skew(-5deg,0deg);
+    color: #fff;
+    background-color: rgba(0, 0, 255, 0);
+    border:1px solid #fff;
+    padding: 15px 30px;
+}
+
+.buttonDefault2:hover{
+    background-color: #D92B4C;
+    border:  1px solid #D92B4C;
+}

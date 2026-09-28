@@ -1,0 +1,63 @@
+@import url("../../../src/assets/css/root.css");
+.main{
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.herobg{
+    height: 90vh;
+    background-image: url("../../assets/image/banner-bg.jpg");
+    background-repeat: no-repeat;   
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.herobgInfo{
+    width: 1200px;
+    margin: 0 auto;
+}
+.herobgContent{
+    max-width: 750px;
+}
+.herobgTitle{
+    font-size: 50px;
+    font-family: "Lato",sans-serif;
+    margin-bottom: 30px;
+}
+.title{
+    color: #fff;
+    font-weight: 400;
+}
+.herobgDesc{
+    font-size: 21px;
+    font-family: "Lato",sans-serif;
+    font-weight: 300;
+    color: #fff;
+    margin: 10px 0px 20px;
+}
+.herobgButtonContainer{
+    display: flex;
+    gap: 1rem;
+}
+.introductionContent{
+    background-color: #080325;
+    padding: 40px 0px;
+}
+
+.demos{
+    width: 700px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(12,1fr);
+}
+
+.demo{
+    grid-column: span 6;
+}
+.demo img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}

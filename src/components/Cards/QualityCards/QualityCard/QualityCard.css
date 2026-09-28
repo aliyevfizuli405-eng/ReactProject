@@ -1,0 +1,38 @@
+@import url("/src/assets/css/root.css");
+
+*{
+    font-family: "Lato",sans-serif;
+}
+.Qualitycard{   
+    background-color: rgba(251, 251, 251, 0.153);
+    grid-column: span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff15;
+    transform: skew(-10deg,0deg);
+    padding: 15px;
+}
+.Qualitycard svg{
+    color: #fff;
+    margin-bottom: 10px;
+    transform: skew(10deg,0deg);
+}
+.QualitycardTitle{
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+     transform: skew(10deg,0deg);
+}
+.QualitycardDesc{
+    text-align: center;
+    width:80%;
+    color: #fff;
+    font-size: 14px;
+     transform: skew(10deg,0deg);
+}
+.Qualitycard:hover{
+    background-color: #ffffff23;
+    transition: background-color 0.3s ease;
+}
