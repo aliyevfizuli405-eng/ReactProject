@@ -3,6 +3,7 @@ import { Button } from "../../components/Buttons/Button1/Button"
 import "../Home/Home.css"
 import { Button2 } from "../../components/Buttons/Button2/Button2"
 import { QualityCards } from "../../components/Cards/QualityCards/QualityCards"
+import { Footer } from "../../components/Footer/Footer"
 
 // Images
 import demo1 from "../../../src/assets/image/demo1.jpg"
@@ -109,11 +110,14 @@ export const Home = () => {
                 </div>
                 <div className="purchase">
                     <div className="purchaseContent">
-                        <h2 className="title">PURCHASE TODAY FOR $59</h2>
-                        <Button2 text="Purchase"/>
+                        <h2 className="title" style={{fontSize:"50px"}}>PURCHASE TODAY FOR $59</h2>
+                        <Button2 text="Purchase" classes="purchaseBtn"/>
                     </div>
                 </div>
             </main>
+            <Footer/>
+            
+            
         </>
     )
 }

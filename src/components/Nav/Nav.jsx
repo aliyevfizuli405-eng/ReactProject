@@ -1,10 +1,30 @@
+import { useState,useEffect} from "react"
 import logo from "../../assets/image/logo-light.png"
 import "../Nav/Nav.css"
 
+// Lucide Icons
+import {MenuIcon} from "lucide-react"
 
 export const Nav = ()=>{
+    const [scrolled,setScrolled] = useState(false);
+
+   useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
     return(
-        <nav>
+        <nav className={scrolled?"ScrolledNav":"navbar"}>
             <div className="navbar">
                 <div className="navbarRight">
                     <img src={logo} alt="" className="logo" />
@@ -66,6 +86,9 @@ export const Nav = ()=>{
                     </div>
                     <button><a href="" className="nav__link"><i class = "bx bx-search"></i></a><br /><span className="salam">salam</span></button>
                     <button><a href="" className="nav__link"><i class = "bi bi-cart"></i></a><br /><span className="salam">salam</span></button>
+                </div>
+                <div className="MobileNav">
+                  <button className="MobileMenu"><MenuIcon color="white"/></button>
                 </div>
             </div>
         </nav>
