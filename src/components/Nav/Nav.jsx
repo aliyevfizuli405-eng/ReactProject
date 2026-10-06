@@ -24,7 +24,7 @@ export const Nav = ()=>{
     };
   }, []);
     return(
-        <nav className={scrolled?"ScrolledNav":"navbar"}>
+        <nav className={scrolled? "ScrolledNav":"nav"}>
             <div className="navbar">
                 <div className="navbarRight">
                     <img src={logo} alt="" className="logo" />

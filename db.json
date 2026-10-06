@@ -1,0 +1,67 @@
+{
+  "games": [
+    {
+      "id": "1",
+      "title": "Elden Ring",
+      "price": 59.99,
+      "discount": 30,
+      "discountedPrice": 41.99,
+      "imageUrl": "https://wp.nkdev.info/youplay/wp-content/uploads/2015/06/dw4___demonlord_by_sandara-1-500x375.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Cyberpunk 2077",
+      "price": 49.99,
+      "discount": 50,
+      "discountedPrice": 24.99,
+      "imageUrl": "https://wp.nkdev.info/youplay/wp-content/uploads/2015/06/game-bloodborne-1920x1151-500x375.jpg"
+    },
+    {
+      "id": "3",
+      "title": "The Witcher 3: Wild Hunt",
+      "price": 39.99,
+      "discount": 75,
+      "discountedPrice": 9.99,
+      "imageUrl": "https://wp.nkdev.info/youplay/wp-content/uploads/2015/06/game-kingdoms-of-amalur-reckoning-4-1920x1080-500x375.jpg"
+    },
+    {
+      "id": "4",
+      "title": "God of War Ragnarök",
+      "price": 69.99,
+      "discount": 20,
+      "discountedPrice": 55.99,
+      "imageUrl": "https://wp.nkdev.info/youplay/wp-content/uploads/2015/06/game-kingdoms-of-amalur-reckoning-1440x900-500x375.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Red Dead Redemption 2",
+      "price": 59.99,
+      "discount": 67,
+      "discountedPrice": 19.79,
+      "imageUrl": "https://wp.nkdev.info/youplay/wp-content/uploads/2015/06/werewolf_by_sandara-d60cws0-1-500x375.jpg"
+    },{
+      "id": "6",
+      "title": "Grand Theft Auto V",
+      "price": 29.99,
+      "discount": 50,
+      "discountedPrice": 14.99,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwlkLMbk6lso1wnZkl-RO_FfiGHdSrM2RwU2pyGPT5ow&s"
+    },
+    {
+      "id": "7",
+      "title": "Hearsay: Monster Hunter World",
+      "price": 29.99,
+      "discount": 60,
+      "discountedPrice": 11.99,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/1/1b/Monster_Hunter_World_cover_art.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Resident Evil 4 Remake",
+      "price": 39.99,
+      "discount": 25,
+      "discountedPrice": 29.99,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/d/df/Resident_Evil_4_remake_cover_art.jpg"
+    }
+  ]
+}

@@ -5,14 +5,15 @@
 }
 
 .herobg{
-    height: 90vh;
+    height: 80vh;
     background-image: url("../../assets/image/banner-bg.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;   
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .herobgInfo{
     width: 1200px;
@@ -143,4 +144,4 @@
 /* 📱 Very small phone */
 @media (max-width: 360px) {
     
-}
+}   

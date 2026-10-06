@@ -1,0 +1,78 @@
+.Fizuli{
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: skew(-5deg,0);
+    color: white;
+    position: static;
+    z-index: -1!important;
+}
+.Fizuli h2{
+    font-size: 20px;
+    transform: skew(5deg,0deg); 
+}
+.GamesSwiper{
+    width: 100%;
+    background-color:#080325;
+}
+
+.previous,.next{
+    border: none;
+    color: white;
+    font-size: 20px;
+    height: 100%;
+    transform: skew(-5deg,0deg);
+    background-color: #08032500;
+}
+
+.previous:hover,.next:hover{
+    box-shadow: rgba(78, 2, 110, 0.56) 0px 22px 70px 4px;
+}
+
+.gameCounter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-image: url("https://wp.nkdev.info/youplay/wp-content/uploads/2015/06/banner-witcher-3.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gameCounterTimer{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+
+.gameCounterTime{
+    padding: 40px;
+    grid-column: span 3;
+    background-color: #08032564;
+    transform: skew(-10deg,0);
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    position: relative;
+}
+.gameCounterTime::before{
+    content: "Days";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    top: -15%;
+    left: 40%;
+    font-size: 14px;
+}
+.mySwiper{
+    position: static;
+    z-index: 0!important;
+}
