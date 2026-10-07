@@ -24,11 +24,11 @@ export const Nav = ()=>{
     };
   }, []);
     return(
-        <nav className={scrolled? "ScrolledNav":"nav"}>
-            <div className="navbar">
+        <nav className={scrolled? "ScrolledNav":"navf"}>
+            <div className="navbarf container-sm">
                 <div className="navbarRight">
                     <img src={logo} alt="" className="logo" />
-                    <div className="dropdown">
+                    <div className="dropdownf">
                          <a href="" className="nav__link">DEMOS<i class = "ri-arrow-drop-down-fill"></i><br /><span className="salam">salam</span></a>
                          <div className="dropdownMenu">
                             <a className="dropdownLink" href="" >Dark</a>
@@ -38,7 +38,7 @@ export const Nav = ()=>{
                             <a className="dropdownLink" href="">Landing</a>
                          </div>
                     </div>
-                     <div className="dropdown">
+                     <div className="dropdownf">
                          <a href="" className="nav__link">SHOP<i class = "ri-arrow-drop-down-fill"></i><br /><span>games</span></a>
                          <div className="dropdownMenu">
                            <a className="dropdownLink" href="" >Dark</a>
@@ -48,7 +48,7 @@ export const Nav = ()=>{
                             <a className="dropdownLink" href="">Landing</a>
                          </div>
                     </div> 
-                    <div className="dropdown">
+                    <div className="dropdownf">
                          <a href="" className="nav__link">BLOG<i class = "ri-arrow-drop-down-fill"></i><br /><span>news</span></a>
                          <div className="dropdownMenu">
                             <a className="dropdownLink" href="" >Dark</a>
@@ -58,7 +58,7 @@ export const Nav = ()=>{
                             <a className="dropdownLink" href="">Landing</a>
                          </div>
                     </div> 
-                    <div className="dropdown">
+                    <div className="dropdownf">
                          <a href="" className="nav__link">FEATURES<i class = "ri-arrow-drop-down-fill"></i><br /><span>full list</span></a>
                          <div className="dropdownMenu">
                             <a href="" className="dropdownLink">Product Style 1</a>
@@ -68,7 +68,7 @@ export const Nav = ()=>{
                     </div>
                 </div>
                 <div className="navbarLeft">
-                    <div className="dropdown">
+                    <div className="dropdownf">
                          <a href="" className="nav__link">THEME<i class = "ri-arrow-drop-down-fill"></i><br /><span>Buy&Docs</span></a>
                          <div className="dropdownMenu">
                              <a href="" className="dropdownLink">Dark</a>
@@ -76,7 +76,7 @@ export const Nav = ()=>{
                             <a href="" className="dropdownLink">Anime</a>
                          </div>
                     </div>
-                     <div className="dropdown">
+                     <div className="dropdownf">
                          <a href="" className="nav__link"><i class = "bi bi-person-fill"></i><i class = "ri-arrow-drop-down-fill"></i><br /><span className="salam">Salam</span></a>
                          <div className="dropdownMenu">
                              <a href="" className="dropdownLink">Dark</a>

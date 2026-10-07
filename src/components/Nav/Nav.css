@@ -8,7 +8,7 @@
     text-decoration: none;
 }
 
-nav {
+nav{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@ nav {
     width: 100%;
 }
 
-.navbar {
+.navbarf{
     min-width: 1200px;
     display: flex;
     justify-content: space-between!important;
@@ -96,7 +96,7 @@ i {
     transition: color 0.2s ease-in;
 }
 
-.dropdown {
+.dropdownf{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +109,7 @@ i {
     width: 0;
 }
 
-.dropdown:hover .dropdownMenu {
+.dropdownf:hover .dropdownMenu {
     opacity: 1;
     width: auto;
     display: flex;
@@ -157,7 +157,7 @@ i {
 
 /* 📱 Tablet */
 @media (max-width: 768px) {
-    .dropdown{
+    .dropdownf{
         display: none;
     }
     .navbarLeft{

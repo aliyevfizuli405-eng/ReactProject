@@ -18,13 +18,15 @@
 .GamesSwiper{
     width: 100%;
     background-color:#080325;
+    position: relative;
+    z-index: 0;
 }
 
 .previous,.next{
     border: none;
     color: white;
     font-size: 20px;
-    height: 100%;
+    height: 80%;
     transform: skew(-5deg,0deg);
     background-color: #08032500;
 }
@@ -75,4 +77,11 @@
 .mySwiper{
     position: static;
     z-index: 0!important;
+}
+.partners{
+    width: 1400px;
+    margin: 0 auto;
+    background-image: url("/src/assets/image/banner-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
 }

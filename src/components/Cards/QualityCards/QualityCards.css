@@ -1,8 +1,16 @@
 .QualityCards{
-    max-width: 1000px;
+    width: 1400px;
     margin: 0 auto;
+    background-color: #080325;
+    padding: 40px;
+}
+
+.qualityCardsContainer{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     justify-content: center;
     gap: 2rem;
+}
+.QualityCard{
+    grid-column: span 3;
 }

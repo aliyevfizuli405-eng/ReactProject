@@ -6,9 +6,9 @@ import './Footer.css'
 export const Footer = () => {
     return (
         <>
-            <hr style={{ maxWidth: "1400px", margin: "0 auto", height: "10px", border: "None" }} />
+            <hr style={{ maxWidth: "1400px", margin: "0 auto", height: "10px", border: "None" }}/>
             <footer>
-                <div className="footerContent">
+                <div className="footerContent container-sm">
                     <h2 className='title footerTitle'>Connect socially with youplay</h2>
                     <div className="social">
                         <div className="socialContent">

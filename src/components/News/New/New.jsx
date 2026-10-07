@@ -1,6 +1,10 @@
 import { Button2 } from "../../Buttons/Button2/Button2"
+import "./New.css"
 
-export const New = ({imageUrl,title,date,desc,point})=>{
+// Lucide 
+import { Calendar } from "lucide-react"
+
+export const New = ({imageUrl,title,date,snippet,point})=>{
     return(
         <div className="newsCard">
             <div className="newsCardImage">
@@ -8,9 +12,13 @@ export const New = ({imageUrl,title,date,desc,point})=>{
                 <span>{point}</span>
             </div>
             <div className="newsCardDetails">
-                <h2>{title}</h2>
-                <p>{desc}</p>
-                <p>{date}</p>
+                <div style={{display:"flex",justifyContent:"space-between"}}>
+                    <h2 className="title">{title}</h2> 
+                    <p className="title"><Calendar/>{date}</p>
+                </div>
+                
+                <p className="herobgDesc">{snippet}</p>
+               
                 <Button2 text="Read More"/>
             </div>
 
