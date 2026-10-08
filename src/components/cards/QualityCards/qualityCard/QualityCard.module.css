@@ -3,9 +3,9 @@
 *{
     font-family: "Lato",sans-serif;
 }
-.Qualitycard{   
+.qualitycard{   
     background-color: rgba(251, 251, 251, 0.153);
-    grid-column: span 3;
+    grid-column:span 4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,25 +14,36 @@
     transform: skew(-10deg,0deg);
     padding: 15px;
 }
-.Qualitycard svg{
+.qualitycard svg{
     color: #fff;
     margin-bottom: 10px;
     transform: skew(10deg,0deg);
 }
-.QualitycardTitle{
+.qualitycardTitle{
     color: #fff;
     font-size: 24px;
     margin-bottom: 10px;
      transform: skew(10deg,0deg);
 }
-.QualitycardDesc{
+.qualitycardDesc{
     text-align: center;
     width:80%;
     color: #fff;
     font-size: 14px;
      transform: skew(10deg,0deg);
 }
-.Qualitycard:hover{
+.qualitycard:hover{
     background-color: #ffffff23;
     transition: background-color 0.3s ease;
+}
+.qualitycardv2{   
+    background-color: rgba(251, 251, 251, 0.153);
+    grid-column:span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff15;
+    transform: skew(-10deg,0deg);
+    padding: 15px;
 }

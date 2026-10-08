@@ -1,9 +1,14 @@
+// Componenets
 import { Nav } from "../../components/Nav/Nav"
-import { Button } from "../../components/Buttons/Button1/Button"
-import "../Home/Home.css"
-import { Button2 } from "../../components/Buttons/Button2/Button2"
-import { QualityCards } from "../../components/Cards/QualityCards/QualityCards"
+import { Button } from "../../components/buttons/Button1/Button"
+import { Button2 } from "../../components/buttons/Button2/Button2"
+import { QualityCards } from "../../components/cards/QualityCards/QualityCards"
 import { Footer } from "../../components/Footer/Footer"
+
+
+// Css Desings
+import "../Home/Home.css"
+
 
 // Images
 import demo1 from "../../../src/assets/image/demo1.jpg"
@@ -14,10 +19,12 @@ import demo4 from "../../../src/assets/image/demo4.jpg"
 // Lucide Icons
 import { Eye, ShoppingCart, Rss, UserRoundGroup, TriangleAlert, Clock, Boxes } from "lucide-react"
 
+
+// Component Arrow Function
 export const Home = () => {
     return (
         <>
-            <Nav></Nav>
+            <Nav/>
             <main className="main">
                 <section className="herobg">
                     <div className="herobgInfo">
@@ -31,7 +38,7 @@ export const Home = () => {
                         </div>
                     </div>
                 </section>
-                <div className="introduction">
+                <section className="introduction">
                     <div className="introductionContent">
                         <QualityCards info={[
                             {
@@ -50,7 +57,6 @@ export const Home = () => {
                                 desc: "Build your gaming social network, or forum for Clan members."
                             }
                         ]} />
-
                         <h2 style={{ textAlign: "center", color: "white", margin: "100px", fontSize: "40px" }}>Youplay Comes with 4 Demo</h2>
                         <div className="demos">
                             <div className="demo">
@@ -71,8 +77,9 @@ export const Home = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="features">
+                </section>
+
+                <section className="features">
                     <div className="featuresContent">
                         <h2 className="title" style={{ fontSize: "48px" }}>A BIT MORE FEATURES</h2>
                         <QualityCards info={[
@@ -92,8 +99,8 @@ export const Home = () => {
                                 desc: "Visual Composer will help you build site pages."
                             }]} />
                     </div>
-                </div>
-                <div className="questions">
+                </section>
+                <section className="questions">
                     <div className="questionsContent">
                         <h2 className="title">Have Any Questions?</h2>
                         <p className="herobgDesc">
@@ -107,17 +114,15 @@ export const Home = () => {
                             Purchase today for $59
                         </p>
                     </div>
-                </div>
-                <div className="purchase">
+                </section>
+                <section className="purchase">
                     <div className="purchaseContent">
                         <h2 className="title" style={{fontSize:"50px"}}>PURCHASE TODAY FOR $59</h2>
                         <Button2 text="Purchase" classes="purchaseBtn"/>
                     </div>
-                </div>
+                </section>
             </main>
             <Footer/>
-            
-            
         </>
     )
 }

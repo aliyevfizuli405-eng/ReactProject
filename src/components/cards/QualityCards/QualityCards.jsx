@@ -1,7 +1,7 @@
-import { QualityCard } from "./QualityCard/QualityCard";
+import { QualityCard } from "./qualityCard/QualityCard";
 
 // Importing Style
-import "./QualityCards.css"
+import  classes from "./QualityCards.module.css"
 
 
 
@@ -9,8 +9,8 @@ import "./QualityCards.css"
 
 export const QualityCards = ({ info }) => {
     return (
-        <div className="QualityCards container-sm">
-            <div className="qualityCardsContainer">
+        <div className={classes.qualityCards}>
+            <div className={classes.qualityCardsContainer}>
                 {info.map((item) => (
                 <QualityCard
                     icon={item.icon}

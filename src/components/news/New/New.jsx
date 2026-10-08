@@ -1,4 +1,4 @@
-import { Button2 } from "../../Buttons/Button2/Button2"
+import { Button2 } from "../../buttons/Button2/Button2"
 import "./New.css"
 
 // Lucide 
