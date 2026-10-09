@@ -1,14 +1,15 @@
 // React imports
 import React, { useEffect, useRef, useState } from "react";
 
-import { Nav } from "../../components/Nav/Nav";
-import { Footer } from "../../components/Footer/Footer";
-import { Button2 } from "../../components/buttons/Button2/Button2";
-import { News } from "../../components/news/News";
-import { Sponsors } from "../../components/sponsors/Sponsors";
-import { QualityCards } from "../../components/cards/QualityCards/QualityCards";
+import { Nav } from "@components/Nav/Nav";
+import { Footer } from "@components/Footer/Footer";
+import {Button2} from "@components/buttons/Button2/Button2"
+import { News } from "@components/news/News";
+import { Sponsors } from "@components/sponsors/Sponsors";
+import { QualityCards } from "@components/cards/QualityCards/QualityCards";
+import { Countdown } from "@components/countdown/Countdown";
 
-import { posts } from "../../js/values";
+import { posts } from "@/js/values.js";
 
 import "./Dark.css";
 
@@ -47,16 +48,6 @@ export const Dark = () => {
   // For Asycn function to get games for swiper
   const [games, setGames] = useState([]);
 
-  // Timer Function
-  const [time, setTime] = useState(100 * 24 * 60 * 60);
-
-  useEffect(() => {
-    setInterval(() => {
-      setTime((time) => time - 1);
-    }, 1000);
-
-    return clearInterval();
-  }, []);
 
   // Swiper reference
   const swiperRef = useRef(null);
@@ -228,32 +219,13 @@ export const Dark = () => {
             <Button2 text="See more" />
           </div>
         </div>
-
-        <div className="gameCounter container-sm">
-          <h2 className="herobgTitle title">The Witcher 3: Wild Hunt</h2>
-
-          <div className="gameCounterTimer">
-            <div className="gameCounterTime">
-              {Math.floor(time / 24 / 60 / 60)}
-            </div>
-            <div className="gameCounterTime">
-              {Math.floor((time / 60 / 60) % 24)}
-            </div>
-
-            <div className="gameCounterTime">
-              {Math.floor((time / 60) % 60)}
-            </div>
-
-            <div className="gameCounterTime">{time % 60}</div>
-          </div>
-          <Button2 text="Purchase" />
-        </div>
+        <Countdown/>
         <News items={posts} />
         <section className="partners">
-          <Sponsors />
+          <Sponsors/>
         </section>
-        <section className="features">
-          <h2 className="title herobgTitle">Why Buy from Us</h2>
+        <section className="featuresSection">
+          <h2 className="title herobgTitle  sm:">Why Buy from Us</h2>
           <QualityCards info={features} />
         </section>
       </main>

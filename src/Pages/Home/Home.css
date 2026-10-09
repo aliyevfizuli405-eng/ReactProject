@@ -1,148 +1,43 @@
-@import url("../../../src/assets/css/root.css");
-
-
 .herobg{
-    height: 80vh;
-    background-image: url("../../assets/image/banner-bg.jpg");
+    background-image: url("./../../assets/image/banner-bg.jpg");
     background-attachment: fixed;
-    background-repeat: no-repeat;   
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    background-repeat: no-repeat;
+    height: 70vh;
 }
-.herobgInfo{
-    width: 1200px;
+.introduction__content{
+    padding-top: 60px;
     margin: 0 auto;
+    max-width: 1000px;
 }
-.herobgContent{
-    max-width: 750px;
-}
-.herobgTitle{
-    font-size: 50px;
-    font-family: "Lato",sans-serif;
-    margin-bottom: 30px;
-}
-.main{
-    width: 1400px;
-    margin: 0 auto!important;
-}
-.title{
-    color: #fff;
-    font-weight: 400;
-    margin-bottom: 40px;
-}
-.herobgDesc{
-    font-size: 21px;
-    font-family: "Lato",sans-serif;
-    font-weight: 300;
-    color: #fff;
-    margin: 10px 0px 20px;
-}
-.herobgButtonContainer{
-    display: flex;
-    gap: 1rem;
-}
-.introductionContent{
-    background-color: #080325;
-    padding: 40px 0px;
-}
-
-.demos{
-    width: 700px;
-    margin: 0 auto;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(12,1fr);
-}
-
 .demo{
-    grid-column: span 6;
-}
-.demo img{
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-.demoSubTitle{
-    color: #fff;
-    text-align: center;
-    font-size: 18px;
-}
-.demoSubTitle span{
-    font-size: 13.5px;
-    color: #777;
-}
-
-.featuresContent{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    min-height: 70vh;
-    padding: 100px 0px;
-    background-image: url("../../assets/image/game-dark-souls-ii-1920x1080-1440x810.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+}
+.demo__image{
+    width: 293px; 
+    height: auto;
+    object-fit: cover;
+
 }
 
-.questions{
-    background-color: #080325;
+.features{
+    background-image: url("./../../assets/image/game-dark-souls-ii-1920x1080-1440x810.jpg");
+    min-height: 50vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.questionsContent{
+.features__conntent{
+    max-width: 1000px;
     margin: 0 auto;
-    width: 1000px;
-    padding: 80px 0px 30px 0px;
 }
 .purchase{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
     background-image: url("./../../assets/image/game-bloodborne-1920x1151-1440x863.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    background-attachment:fixed;
+    height: 40vh;
 }
-.purchaseContent{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.purchaseBtn{
-    padding: 15px 50px;
-    font-size: 18px;
-}
-
-@media (max-width: 1200px) {
-    
-}
-
-/* 📱 Tablet landscape / small laptop */
-@media (max-width: 992px) {
-    
-}
-
-/* 📱 Tablet */
-@media (max-width: 768px) {
-    
-}
-
-/* 📱 Large phone */
-@media (max-width: 576px) {
-    
-}
-
-/* 📱 Small phone */
-@media (max-width: 480px) {
-    
-}
-
-/* 📱 Very small phone */
-@media (max-width: 360px) {
-    
-}   

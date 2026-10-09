@@ -1,16 +1,12 @@
 import { QualityCard } from "./qualityCard/QualityCard";
 
 // Importing Style
-import  classes from "./QualityCards.module.css"
-
-
-
-
+import  "./QualityCards.css"
 
 export const QualityCards = ({ info }) => {
     return (
-        <div className={classes.qualityCards}>
-            <div className={classes.qualityCardsContainer}>
+        <div className="quality__cards p-4">
+            <div className="grid  grid-cols-12 justify-center gap-2 md:gap-4 quality__cards">
                 {info.map((item) => (
                 <QualityCard
                     icon={item.icon}

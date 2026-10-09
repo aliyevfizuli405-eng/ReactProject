@@ -1,15 +1,7 @@
-.buttonDefault2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: skew(-5deg,0deg);
-    color: #fff;
-    background-color: rgba(0, 0, 255, 0);
-    border:1px solid #fff;
-    padding: 15px 30px;
+.button__default2{
+    border: 2px solid white;
+    transform: skew(-10deg,0deg);
 }
-
-.buttonDefault2:hover{
-    background-color: #D92B4C;
-    border:  1px solid #D92B4C;
+.button__default2:hover{
+    border: 2px solid #d92b4c;
 }

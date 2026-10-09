@@ -1,0 +1,6 @@
+.quality__card{
+    transform: skew(-10deg,0deg);
+}
+.quality__card >*{
+    transform: skew(10deg,0deg);
+}

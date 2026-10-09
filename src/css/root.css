@@ -27,10 +27,10 @@
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
 :root{
-    --navBackGround: #080325;
-
+    --navbackground: #080325;
+    --navbackgroundv2:#08032566;
 }
