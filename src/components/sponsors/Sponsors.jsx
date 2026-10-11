@@ -15,7 +15,7 @@ import { FreeMode, Pagination } from 'swiper/modules';
 export const Sponsors = ()=>{
   return (
     <>
-    <h2 className="title" style={{textAlign:"center"}}>Partners</h2>
+    <h2 className="title text-light" style={{textAlign:"center"}}>Partners</h2>
     <Swiper
         slidesPerView={5}
         spaceBetween={0}

@@ -1,12 +1,17 @@
 import { useState,useEffect} from "react"
+import { BrowserRouter,Routes,Route,Link } from "react-router"
 import logo from "@/assets/image/logo-light.png"
 import "./Nav.css"
 
 // Lucide Icons
 import {MenuIcon} from "lucide-react"
 
+
+
+
 export const Nav = ()=>{
     const [scrolled,setScrolled] = useState(false);
+    const [mobileNav,setMobileNav]=useState(false)
 
    useEffect(() => {
     const handleScroll = () => {
@@ -88,9 +93,13 @@ export const Nav = ()=>{
                     <button><a href="" className="nav__link"><i className = "bi bi-cart"></i></a><br /><span className="opacity-0">salam</span></button>
                 </div>
                 <div className="mobile__nav flex md:hidden">
-                  <button className="mobile__menu"><MenuIcon color="white"/></button>
+                  <button className="mobile__menu__btn" onClick={()=>{setMobileNav(!mobileNav)}}><MenuIcon color="white"/></button>
+                  <div className={mobileNav? "mobile__menu__container":"hidden"}>
+                    <a href="" className="nav__link">DEMOS<i className = "ri-arrow-drop-down-fill"></i><br /><span className="opacity-0">salam</span></a>
+       
+                  </div>
                 </div>
             </div>
         </nav>
     )
-}
+  }

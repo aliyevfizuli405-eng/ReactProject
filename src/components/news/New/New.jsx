@@ -4,20 +4,20 @@ import "./New.css"
 // Lucide 
 import { Calendar } from "lucide-react"
 
-export const New = ({imageUrl,title,date,snippet,point})=>{
+export const New = ({imageUrl,title,date,snippet,point,classes})=>{
     return(
-        <div className="newsCard">
-            <div className="newsCardImage">
+        <div className="newsCard grid grid-cols-12">
+            <div className="newsCardImage  col-span-12 md:col-span-6">
                 <img src={imageUrl} alt="" />
                 <span>{point}</span>
             </div>
-            <div className="newsCardDetails">
+            <div className="newsCardDetails col-span-12 p-3 md:col-span-6">
                 <div style={{display:"flex",justifyContent:"space-between"}}>
-                    <h2 className="title">{title}</h2> 
-                    <p className="title"><Calendar/>{date}</p>
+                    <h2 className="title text-white" >{title}</h2> 
+                    <p className="title text-white"><Calendar/>{date}</p>
                 </div>
                 
-                <p className="herobgDesc">{snippet}</p>
+                <p className="herobgDesc text-white">{snippet}</p>
                
                 <Button2 text="Read More"/>
             </div>

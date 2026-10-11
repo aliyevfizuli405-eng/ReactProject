@@ -12,7 +12,7 @@ import { BrowserRouter,Routes,Route} from "react-router"
 export const App = () => {
   return(
     <>
-    <Home/>
+    <Dark/>
     </>
 
   )

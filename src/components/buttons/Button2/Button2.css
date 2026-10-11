@@ -1,6 +1,9 @@
+@import "tailwindcss";
+
 .button__default2{
     border: 2px solid white;
     transform: skew(-10deg,0deg);
+    padding: 15px 50px;
 }
 .button__default2:hover{
     border: 2px solid #d92b4c;

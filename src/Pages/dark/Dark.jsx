@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 import { Nav } from "@components/Nav/Nav";
 import { Footer } from "@components/Footer/Footer";
-import {Button2} from "@components/buttons/Button2/Button2"
+import { Button2 } from "@components/buttons/Button2/Button2";
 import { News } from "@components/news/News";
 import { Sponsors } from "@components/sponsors/Sponsors";
 import { QualityCards } from "@components/cards/QualityCards/QualityCards";
@@ -16,8 +16,6 @@ import "./Dark.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { CreditCard, Gamepad2, Banknote, UserGroup } from "lucide-react";
-
-// import required modules
 
 import "swiper/css";
 
@@ -48,7 +46,6 @@ export const Dark = () => {
   // For Asycn function to get games for swiper
   const [games, setGames] = useState([]);
 
-
   // Swiper reference
   const swiperRef = useRef(null);
   const swiperRef2 = useRef(null);
@@ -61,80 +58,183 @@ export const Dark = () => {
 
       setGames(data);
     }
-
     GetGames();
   }, []);
 
   return (
     <>
       <Nav />
-      <main className="main container-sm">
-        <div className="herobg">
-          <div className="herobgInfo">
-            <h2 className="herobgTitle title">
+      <main className="main container-md">
+        <div className="herobg flex justify-start items-center p-5">
+          <div className="herobgInfo flex flex-column">
+            <p className="text-light text-left md:text-left text-[50px]">
               Clan War: <br />
               Global Esports Cup
-            </h2>
-            <span className="herobgDesc subtitle">
+            </p>
+            <p className="text-light md:text-left text-[14px] text-left">
               Virtus PRO vs Team Secret
+            </p>
+            <span className="">
+              <Button2 text="Learn More" classes="flex justify-center" />
             </span>
-            <br />
-            <br />
-            <br />
-
-            <Button2 text="Learn More" />
           </div>
         </div>
-
-        <div className="GamesSwiper">
-          {/* SWIPER */}
-          <Swiper
-            onSwiper={(swiper) => {
-              swiperRef.current = swiper;
-            }}
-            slidesPerView={5}
-            spaceBetween={0}
-            className="mySwiper"
-          >
-            {games.map((game) => (
-              <SwiperSlide key={game.id}>
-                <div
-                  className="Fizuli"
-                  style={{
-                    backgroundImage: `url(${game.imageUrl})`,
-                  }}
-                >
-                  <h2>{game.title}</h2>
-                </div>
-              </SwiperSlide>
-            ))}
-
-            <button
-              className="previous"
-              style={{
-                position: "absolute",
-                top: "0",
-                left: "10px",
-                zIndex: "1",
+        <div className="items bg-[#080325] p-2">
+          <div className="GamesSwiper">
+            {/* SWIPER */}
+            <Swiper
+              onSwiper={(swiper) => {
+                swiperRef.current = swiper;
               }}
-              onClick={() => swiperRef.current?.slidePrev()}
-            >
-              ←
-            </button>
-
-            <button
-              className="next"
-              style={{
-                position: "absolute",
-                top: "0",
-                right: "0",
-                zIndex: "1",
+              slidesPerView={1}
+              spaceBetween={10}
+              breakpoints={{
+                480: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 15,
+                },
+                1024: {
+                  slidesPerView: 4,
+                  spaceBetween: 15,
+                },
+                1280: {
+                  slidesPerView: 5,
+                  spaceBetween: 20,
+                },
               }}
-              onClick={() => swiperRef.current?.slideNext()}
+              className="mySwiper"
             >
-              →
-            </button>
-          </Swiper>
+              {games.map((game) => (
+                <SwiperSlide key={game.id}>
+                  <div
+                    className="flex justify-center items-center w-[283px] h-[283px] -skew-x-6 object-cover swiperbg"
+                    style={{
+                      backgroundImage: `url(${game.imageUrl})`,
+                    }}
+                  >
+                    <p className="text-[18px] text-light">{game.title}</p>
+                  </div>
+                </SwiperSlide>
+              ))}
+
+              <button
+                className="previous"
+                style={{
+                  position: "absolute",
+                  top: "0",
+                  left: "10px",
+                  zIndex: "1",
+                }}
+                onClick={() => swiperRef.current?.slidePrev()}
+              >
+                ←
+              </button>
+
+              <button
+                className="next"
+                style={{
+                  position: "absolute",
+                  top: "0",
+                  right: "0",
+                  zIndex: "1",
+                }}
+                onClick={() => swiperRef.current?.slideNext()}
+              >
+                →
+              </button>
+            </Swiper>
+
+            {/* TITLE + BUTTONS */}
+            <div
+              className="herobgInfo"
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              <p className="text-light text-[50px]">Games</p>
+
+              <Button2 text="See more" />
+            </div>
+          </div>
+
+          <div className="GamesSwiper">
+            {/* SWIPER */}
+            <Swiper
+              onSwiper={(swiper) => {
+                swiperRef2.current = swiper;
+              }}
+              slidesPerView={1}
+              spaceBetween={10}
+              breakpoints={{
+                480: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 15,
+                },
+                1024: {
+                  slidesPerView: 4,
+                  spaceBetween: 15,
+                },
+                1280: {
+                  slidesPerView: 5,
+                  spaceBetween: 20,
+                },
+              }}
+              className="mySwiper"
+            >
+              {games.map((game) => (
+                <SwiperSlide key={game.id}>
+                  <div
+                    className="flex flex-col justify-center items-center w-[283px] h-[283px] -skew-x-6 object-cover swiperbg"
+                    style={{
+                      backgroundImage: `url(${game.imageUrl})`,
+                    }}
+                  >
+                    <p className="text-light text-[18px] text-center">{game.title}</p>
+                    
+                    <p className="text-light text-[18px] font-semibold">
+                      {game.price}$
+                    </p>
+                  </div>
+                </SwiperSlide>
+              ))}
+
+              <button
+                className="previous"
+                style={{
+                  position: "absolute",
+                  top: "0",
+                  left: "10px",
+                  zIndex: "1",
+                }}
+                onClick={() => swiperRef2.current?.slidePrev()}
+              >
+                ←
+              </button>
+
+              <button
+                className="next"
+                style={{
+                  position: "absolute",
+                  top: "0",
+                  right: "0",
+                  zIndex: "1",
+                }}
+                onClick={() => swiperRef2.current?.slideNext()}
+              >
+                →
+              </button>
+            </Swiper>
+          </div>
 
           {/* TITLE + BUTTONS */}
           <div
@@ -145,91 +245,30 @@ export const Dark = () => {
               alignItems: "center",
             }}
           >
-            <h2 className="title">Games</h2>
+            <p className="title text-light text-[50px]">Discounts</p>
 
             <Button2 text="See more" />
           </div>
         </div>
 
-        <div className="GamesSwiper">
-          {/* SWIPER */}
-          <Swiper
-            onSwiper={(swiper) => {
-              swiperRef2.current = swiper;
-            }}
-            slidesPerView={5}
-            spaceBetween={0}
-            className="mySwiper"
-          >
-            {games.map((game) => (
-              <SwiperSlide key={game.id}>
-                <div
-                  className="Fizuli"
-                  style={{
-                    backgroundImage: `url(${game.imageUrl})`,
-                  }}
-                >
-                  <h2>{game.title}</h2>
-
-                  <p>
-                    {game.price}$<span>{game.discountedPrice}$</span>
-                  </p>
-                </div>
-              </SwiperSlide>
-            ))}
-
-            <button
-              className="previous"
-              style={{
-                position: "absolute",
-                top: "0",
-                left: "10px",
-                zIndex: "1",
-              }}
-              onClick={() => swiperRef2.current?.slidePrev()}
-            >
-              ←
-            </button>
-
-            <button
-              className="next"
-              style={{
-                position: "absolute",
-                top: "0",
-                right: "0",
-                zIndex: "1",
-              }}
-              onClick={() => swiperRef2.current?.slideNext()}
-            >
-              →
-            </button>
-          </Swiper>
-
-          {/* TITLE + BUTTONS */}
-          <div
-            className="herobgInfo"
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
-          >
-            <h2 className="title">Discounts</h2>
-
-            <Button2 text="See more" />
-          </div>
+        <div className="gameCounter container-md p-5">
+          <Countdown />
         </div>
-        <Countdown/>
-        <News items={posts} />
-        <section className="partners">
-          <Sponsors/>
+
+        <div className="news">
+          <News items={posts} />
+        </div>
+
+        <section className="partners  p-5 bg-no-repeat bg-cover bg-[url('https://wp.nkdev.info/youplay/wp-content/uploads/2015/06/banner-bg-500x375.jpg')]">
+          <Sponsors />
         </section>
-        <section className="featuresSection">
-          <h2 className="title herobgTitle  sm:">Why Buy from Us</h2>
+        <section className="featuresSection p-5 bg-[#080325]">
+          <h2 className="title herobgTitle text-center text-light">Why Buy from Us</h2>
           <QualityCards info={features} />
         </section>
+        <Footer />
       </main>
-      <Footer />
+      
     </>
   );
 };

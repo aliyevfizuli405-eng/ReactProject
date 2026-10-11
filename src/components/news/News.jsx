@@ -6,8 +6,7 @@ export const News = ({items})=>{
         esyalar=items.map(item=><New imageUrl={item.imageUrl} title={item.title} date={item.date} snippet={item.snippet} point={item.desc}/>)
         return (
             <>
-            <div className="newsCardContainer container-sm">
-                <h2 className="title">Latest News</h2>
+            <div className="newsCardContainer container-md bg-[#080325] p-3 flex flex-col gap-5">
                 {esyalar}
             </div>
             </>    
