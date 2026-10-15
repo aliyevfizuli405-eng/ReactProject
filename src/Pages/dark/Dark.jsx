@@ -8,8 +8,8 @@ import { News } from "@components/news/News";
 import { Sponsors } from "@components/sponsors/Sponsors";
 import { QualityCards } from "@components/cards/QualityCards/QualityCards";
 import { Countdown } from "@components/countdown/Countdown";
-
 import { posts } from "@/js/values.js";
+import {Herobgdark} from "@components/herobgdark/Herobgdark"
 
 import "./Dark.css";
 
@@ -65,23 +65,9 @@ export const Dark = () => {
     <>
       <Nav />
       <main className="main container-md">
-        <div className="herobg flex justify-start items-center p-5">
-          <div className="herobgInfo flex flex-column">
-            <p className="text-light text-left md:text-left text-[50px]">
-              Clan War: <br />
-              Global Esports Cup
-            </p>
-            <p className="text-light md:text-left text-[14px] text-left">
-              Virtus PRO vs Team Secret
-            </p>
-            <span className="">
-              <Button2 text="Learn More" classes="flex justify-center" />
-            </span>
-          </div>
-        </div>
+        <Herobgdark/>
         <div className="items bg-[#080325] p-2">
-          <div className="GamesSwiper">
-            {/* SWIPER */}
+          <div className="GamesSwiper z-2">
             <Swiper
               onSwiper={(swiper) => {
                 swiperRef.current = swiper;
@@ -147,8 +133,6 @@ export const Dark = () => {
                 →
               </button>
             </Swiper>
-
-            {/* TITLE + BUTTONS */}
             <div
               className="herobgInfo"
               style={{
@@ -162,9 +146,7 @@ export const Dark = () => {
               <Button2 text="See more" />
             </div>
           </div>
-
           <div className="GamesSwiper">
-            {/* SWIPER */}
             <Swiper
               onSwiper={(swiper) => {
                 swiperRef2.current = swiper;
@@ -235,8 +217,6 @@ export const Dark = () => {
               </button>
             </Swiper>
           </div>
-
-          {/* TITLE + BUTTONS */}
           <div
             className="herobgInfo"
             style={{
@@ -246,7 +226,6 @@ export const Dark = () => {
             }}
           >
             <p className="title text-light text-[50px]">Discounts</p>
-
             <Button2 text="See more" />
           </div>
         </div>

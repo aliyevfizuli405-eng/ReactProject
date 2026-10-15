@@ -3,6 +3,8 @@ import { Nav } from "@components/Nav/Nav"
 import { Dark } from "@/Pages/dark/Dark"
 import { News } from "@components/news/News"
 import { Footer } from "@components/Footer/Footer"
+import { ProductStyle } from "./components/productStyle/ProductStyle"
+
 
 
 import "./App.css"
@@ -12,7 +14,7 @@ import { BrowserRouter,Routes,Route} from "react-router"
 export const App = () => {
   return(
     <>
-    <Dark/>
+    <ProductStyle/>
     </>
 
   )

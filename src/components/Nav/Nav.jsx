@@ -33,7 +33,7 @@ export const Nav = ()=>{
             <div className="navbar flex justify-start gap-2 p-3  container-md">
                 <div className="navbar__left flex justify-betweenitems-center ">
                     <img src={logo} alt="" className="logo" />
-                    <div className="dropdown hidden md:block relative">
+                    <div className="dropdownf hidden md:block">
                          <a href="" className="nav__link">DEMOS<i className = "ri-arrow-drop-down-fill"></i><br /><span className="opacity-0">salam</span></a>
                          <div className="dropdownMenu">
                             <a className="dropdownLink" href="" >Dark</a>
@@ -46,21 +46,21 @@ export const Nav = ()=>{
                      <div className="dropdown hidden md:block">
                          <a href="" className="nav__link">SHOP<i className = "ri-arrow-drop-down-fill"></i><br /><span>games</span></a>
                          <div className="dropdownMenu">
-                           <a className="dropdownLink" href="" >Dark</a>
-                            <a className="dropdownLink" href="">Shooter</a>
-                            <a className="dropdownLink" href="">Anime</a>
-                            <a className="dropdownLink" href="">Light</a>
-                            <a className="dropdownLink" href="">Landing</a>
+                           <a className="dropdownLink" href="" >Product Style 1</a>
+                            <a className="dropdownLink" href="">Product Style 2</a>
+                            <a className="dropdownLink" href="">Shop</a>
+                            <a className="dropdownLink" href="">CheckOut</a>
+                            <a className="dropdownLink" href="">Basket</a>
                          </div>
                     </div> 
                     <div className="dropdown hidden md:block">
                          <a href="" className="nav__link">BLOG<i className = "ri-arrow-drop-down-fill"></i><br /><span>news</span></a>
-                         <div className="dropdownMenu">
-                            <a className="dropdownLink" href="" >Dark</a>
-                            <a className="dropdownLink" href="">Shooter</a>
-                            <a className="dropdownLink" href="">Anime</a>
-                            <a className="dropdownLink" href="">Light</a>
-                            <a className="dropdownLink" href="">Landing</a>
+                         <div className="dropdownMenu flex">
+                          <div><a className="dropdownLink" href="" >Blog Style 1</a></div>
+                          <div><a className="dropdownLink" href="">Blog Syyle 2</a></div>
+                          <div><a className="dropdownLink" href="">Blog Stle 3</a></div>
+                          <div><a className="dropdownLink" href="">Post Style 1</a></div>
+                          <div><a className="dropdownLink" href="">Post Style 2</a></div>
                          </div>
                     </div> 
                     <div className="dropdown hidden md:block">
