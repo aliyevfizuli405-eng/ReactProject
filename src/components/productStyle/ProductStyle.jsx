@@ -7,7 +7,6 @@ import { products } from "../../js/values";
 export const ProductStyle = () => {
   return (
     <>
-      <Nav />
       <ProductHerobg
         bgImage={products[0].bgImage}
         title={products[0].title}
@@ -23,14 +22,24 @@ export const ProductStyle = () => {
                 {products[0].description}
               </p>
               <p className="text-light text-4xl">System Requirements</p>
-              <p className="text-light text-[14px"> OS:{(products[0].systemRequirements.processor)}</p>
-              <p className="text-light text-[14px]"> Memory:{(products[0].systemRequirements.memory)}</p>
-              <p className="text-light text-[14px]"> Graphics:{(products[0].systemRequirements.graphics)}</p>
-              <p className="text-light text-[14px]"> Storage:{(products[0].systemRequirements.storage)}</p>
+              <p className="text-light text-[14px">
+                {" "}
+                OS:{products[0].systemRequirements.processor}
+              </p>
+              <p className="text-light text-[14px]">
+                {" "}
+                Memory:{products[0].systemRequirements.memory}
+              </p>
+              <p className="text-light text-[14px]">
+                {" "}
+                Graphics:{products[0].systemRequirements.graphics}
+              </p>
+              <p className="text-light text-[14px]">
+                {" "}
+                Storage:{products[0].systemRequirements.storage}
+              </p>
             </div>
-            <div>
-
-            </div>
+            <div></div>
           </div>
         </div>
       </main>

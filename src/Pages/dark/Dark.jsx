@@ -63,7 +63,6 @@ export const Dark = () => {
 
   return (
     <>
-      <Nav />
       <main className="main container-md">
         <Herobgdark/>
         <div className="items bg-[#080325] p-2">
@@ -245,7 +244,6 @@ export const Dark = () => {
           <h2 className="title herobgTitle text-center text-light">Why Buy from Us</h2>
           <QualityCards info={features} />
         </section>
-        <Footer />
       </main>
       
     </>

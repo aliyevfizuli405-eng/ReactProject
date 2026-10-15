@@ -25,16 +25,13 @@ import { Eye, ShoppingCart, Rss, UserRoundGroup, TriangleAlert, Clock, Boxes } f
 export const Home = () => {
     return (
         <>
-            <Nav/>
             <main className="main container-xl">
                 <Herobg/>
                 <Introduction/>
                 <Features/>
                 <Questions/>
                 <Purchase/>
-                <Footer/>   
             </main>
-            
         </>
     )
 }
