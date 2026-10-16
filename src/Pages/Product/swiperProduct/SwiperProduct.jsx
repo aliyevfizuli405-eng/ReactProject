@@ -10,9 +10,9 @@ import { Search } from "lucide-react";
 
 export const SwiperProduct = () => {
   return (
-    <div className="container-md">
+    <div className="container-md p-6">
       <Swiper
-        spaceBetween={20}
+        spaceBetween={10}
         pagination={{
           clickable: true,
         }}
@@ -25,18 +25,18 @@ export const SwiperProduct = () => {
           },
           576: {
             slidesPerView: 2,
-            spaceBetween: 0,
+            spaceBetween: 10,
           },
           768: {
             slidesPerView: 3,
-            spaceBetween: 0,
+            spaceBetween: 10,
           },
           992: {
-            slidesPerView: 3,
-            spaceBetween: 0,
+            slidesPerView: 4,
+            spaceBetween: 10,
           },
           1200: {
-            slidesPerView: 6,
+            slidesPerView: 5,
             spaceBetween: 0,
           },
         }}
@@ -44,7 +44,7 @@ export const SwiperProduct = () => {
         {games.map((game) => (
           <SwiperSlide key={game.id}>
             <div
-              className="min-h-[300px] flex justify-center items-center flex-col  bg-contain bg-center bg-no-repeat p-5"
+              className="min-h-[300px] flex justify-center items-center flex-col  bg-contain bg-center hover:scale-[1] transition-all border-emerald-500 p-0 hover:border bg-no-repeat"
               style={{
                 backgroundImage: `url("${game.bgImage}")`,
               }}

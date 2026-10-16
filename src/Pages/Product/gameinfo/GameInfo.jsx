@@ -40,13 +40,13 @@ export const GameInfo = ({game}) => {
           <span className="-skew-x-6 bg-[#ffffff30] p-2 block w-[70%] text-white">
             Top Rated Products
           </span>
-          {games.map((product) => (
+          {games.map((game) => (
             <a href="">
             <span className="flex gap-2">
-              <img src={product.bgImage} className="w-[100px] -skew-x-6" alt="" />
+              <img src={game.bgImage} className="w-[100px]" alt="" />
               <div>
-                <p className="text-white">{product.title}</p>
-                <p className="text-white">${product.price}</p>
+                <p className="text-white">{game.title}</p>
+                <p className="text-white">${game.price}</p>
               </div>
             </span>
             </a>

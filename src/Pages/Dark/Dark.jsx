@@ -75,7 +75,7 @@ export const Dark = () => {
               spaceBetween={10}
               breakpoints={{
                 480: {
-                  slidesPerView: 2,
+                  slidesPerView: 3,
                   spaceBetween: 10,
                 },
                 768: {
@@ -88,7 +88,7 @@ export const Dark = () => {
                 },
                 1280: {
                   slidesPerView: 4,
-                  spaceBetween: 100,
+                  spaceBetween: 10,
                 },
               }}
               className="mySwiper"
@@ -133,7 +133,7 @@ export const Dark = () => {
               </button>
             </Swiper>
             <div
-              className="herobgInfo"
+              className="herobgInfo flex-wrap"
               style={{
                 display: "flex",
                 justifyContent: "space-between",
@@ -166,7 +166,7 @@ export const Dark = () => {
                   spaceBetween: 15,
                 },
                 1280: {
-                  slidesPerView: 5,
+                  slidesPerView: 4,
                   spaceBetween: 20,
                 },
               }}
@@ -217,7 +217,7 @@ export const Dark = () => {
             </Swiper>
           </div>
           <div
-            className="herobgInfo"
+            className="herobgInfo flex-wrap"
             style={{
               display: "flex",
               justifyContent: "space-between",
@@ -229,7 +229,7 @@ export const Dark = () => {
           </div>
         </div>
 
-        <div className="gameCounter bg-pink-950 container-md p-5">
+        <div className="gameCounter container-md p-5">
           <Countdown />
         </div>
 
