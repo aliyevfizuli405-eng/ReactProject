@@ -1,9 +1,8 @@
 .herobg{
-    background-image: url("./../../assets/image/banner-bg.jpg");
-    background-attachment: fixed;
+    background-image: url("./../../assets/image/ps2.webp");
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 70vh;
+    min-height: 80vh;
 }
 .introduction__content{
     padding-top: 60px;
@@ -24,9 +23,8 @@
 }
 
 .features{
-    background-image: url("./../../assets/image/game-dark-souls-ii-1920x1080-1440x810.jpg");
+    background-image: url("./../../assets/image/otherbg.png");
     min-height: 50vh;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -35,9 +33,46 @@
     margin: 0 auto;
 }
 .purchase{
-    background-image: url("./../../assets/image/game-bloodborne-1920x1151-1440x863.jpg");
+    background-image: url("./../../assets/image/eldenring.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     min-height: 40vh;
+}
+
+.container-md {
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-md {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-md {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-md {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-md {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container-md {
+    max-width: 1320px;
+  }
 }

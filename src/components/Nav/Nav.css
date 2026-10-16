@@ -19,16 +19,19 @@ nav{
     color: white;
 }
 .dropdownMenu{
-    display: none;
-    position: absolute;
-}
-.dropdown:hover .dropdownMenu{
-    display: flex;
-    flex-direction: column;
+   display: flex;
     justify-content: center;
     align-items: start;
-    background-color:#08032580;
+    position: absolute;
+    top: 100%;
+    background-color:#080325CC;
     padding: 30px;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    border-radius: 3px;
+}
+.dropdown:hover .dropdownMenu{
+    opacity: 1;
 }
 .dropdownLink{
     color: white;
@@ -40,8 +43,15 @@ nav{
     z-index: 1!important;
 }
 .mobile__menu__container{
+    width: 100%;
     position: absolute;
     top: 100%;
     left: 83.5%;
-    background-color: blueviolet;
+    background-color:#080325CC;
+    opacity: 1;
+    transition: all;
 }
+
+
+
+

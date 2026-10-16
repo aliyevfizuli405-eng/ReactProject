@@ -25,9 +25,9 @@ export const Nav = () => {
   const closeMobileNav = () => setMobileNav(false);
 
   return (
-    <nav className={scrolled ? "scrolled__nav" : "nav"}>
-      <div className="navbar flex justify-start gap-2 p-3 container-md">
-        <div className="navbar__left flex justify-betweenitems-center">
+    <nav className={scrolled ? "scrolled__nav p-5 flex " : "nav p-5"}>
+      <div className="navbar flex justify-between items-center gap-2 p-3 container-md">
+        <div className="navbar__left flex justify-center items-center">
           <Link to="/">
             <img src={logo} alt="gameShop logo" className="logo" />
           </Link>
@@ -39,12 +39,22 @@ export const Nav = () => {
               <br />
               <span className="opacity-0">salam</span>
             </Link>
-            <div className="dropdownMenu">
-              <Link className="dropdownLink" to="/dark">Dark</Link>
-              <a className="dropdownLink" href="">Shooter</a>
-              <a className="dropdownLink" href="">Anime</a>
-              <Link className="dropdownLink" to="/">Light</Link>
-              <a className="dropdownLink" href="">Landing</a>
+            <div className="dropdownMenu flex-col">
+              <Link className="dropdownLink" to="/dark">
+                Dark
+              </Link>
+              <a className="dropdownLink" href="">
+                Shooter
+              </a>
+              <a className="dropdownLink" href="">
+                Anime
+              </a>
+              <Link className="dropdownLink" to="/">
+                Light
+              </Link>
+              <a className="dropdownLink" href="">
+                Landing
+              </a>
             </div>
           </div>
 
@@ -55,12 +65,22 @@ export const Nav = () => {
               <br />
               <span>games</span>
             </Link>
-            <div className="dropdownMenu">
-              <Link className="dropdownLink" to="/product">Product Style 1</Link>
-              <a className="dropdownLink" href="">Product Style 2</a>
-              <a className="dropdownLink" href="">Shop</a>
-              <a className="dropdownLink" href="">CheckOut</a>
-              <a className="dropdownLink" href="">Basket</a>
+            <div className="dropdownMenu flex-col">
+              <Link className="dropdownLink" to="/product">
+                Product Style 1
+              </Link>
+              <a className="dropdownLink" href="">
+                Product Style 2
+              </a>
+              <a className="dropdownLink" href="">
+                Shop
+              </a>
+              <a className="dropdownLink" href="">
+                CheckOut
+              </a>
+              <a className="dropdownLink" href="">
+                Basket
+              </a>
             </div>
           </div>
 
@@ -71,12 +91,26 @@ export const Nav = () => {
               <br />
               <span>news</span>
             </a>
-            <div className="dropdownMenu flex">
-              <div><a className="dropdownLink" href="">Blog Style 1</a></div>
-              <div><a className="dropdownLink" href="">Blog Style 2</a></div>
-              <div><a className="dropdownLink" href="">Blog Style 3</a></div>
-              <div><a className="dropdownLink" href="">Post Style 1</a></div>
-              <div><a className="dropdownLink" href="">Post Style 2</a></div>
+            <div className="dropdownMenu flex justify-center gap-5 items-center">
+              <div className="flex flex-col">
+                <a className="dropdownLink" href="">
+                  Post Style 1
+                </a>
+                <a className="dropdownLink" href="">
+                  Post Style 2
+                </a>
+              </div>
+              <div className="flex flex-col">
+                <a className="dropdownLink" href="">
+                  Blog Style 1
+                </a>
+                <a className="dropdownLink" href="">
+                  Blog Style 2
+                </a>
+                <a className="dropdownLink" href="">
+                  Blog Style 3
+                </a>
+              </div>
             </div>
           </div>
 
@@ -87,10 +121,16 @@ export const Nav = () => {
               <br />
               <span>full list</span>
             </div>
-            <div className="dropdownMenu">
-              <Link className="dropdownLink" to="/product">Product Style 1</Link>
-              <a className="dropdownLink" href="">Shooter</a>
-              <a className="dropdownLink" href="">Anime</a>
+            <div className="dropdownMenu flex-col">
+              <Link className="dropdownLink" to="/product">
+                Product Style 1
+              </Link>
+              <a className="dropdownLink" href="">
+                Shooter
+              </a>
+              <a className="dropdownLink" href="">
+                Anime
+              </a>
             </div>
           </div>
         </div>
@@ -103,10 +143,16 @@ export const Nav = () => {
               <br />
               <span>Buy&Docs</span>
             </a>
-            <div className="dropdownMenu">
-              <Link className="dropdownLink" to="/dark">Dark</Link>
-              <a className="dropdownLink" href="">Shooter</a>
-              <a className="dropdownLink" href="">Anime</a>
+            <div className="dropdownMenu flex-col">
+              <Link className="dropdownLink" to="/dark">
+                Dark
+              </Link>
+              <a className="dropdownLink" href="">
+                Shooter
+              </a>
+              <a className="dropdownLink" href="">
+                Anime
+              </a>
             </div>
           </div>
 
@@ -117,10 +163,16 @@ export const Nav = () => {
               <br />
               <span className="opacity-0">Salam</span>
             </a>
-            <div className="dropdownMenu">
-              <a className="dropdownLink" href="">Login</a>
-              <a className="dropdownLink" href="">Register</a>
-              <a className="dropdownLink" href="">Profile</a>
+            <div className="dropdownMenu flex-col">
+              <a className="dropdownLink" href="">
+                Login
+              </a>
+              <a className="dropdownLink" href="">
+                Register
+              </a>
+              <a className="dropdownLink" href="">
+                Profile
+              </a>
             </div>
           </div>
 
@@ -142,7 +194,7 @@ export const Nav = () => {
         </div>
 
         {/* MOBILE */}
-        <div className="mobile__nav flex md:hidden">
+        <div className="mobile__nav flex md:hidden md:opacity-0">
           <button
             className="mobile__menu__btn"
             aria-label="Toggle menu"
@@ -151,10 +203,16 @@ export const Nav = () => {
             <MenuIcon color="white" />
           </button>
 
-          <div className={mobileNav ? "mobile__menu__container" : "hidden"}>
-            <Link to="/" className="nav__link" onClick={closeMobileNav}>HOME</Link>
-            <Link to="/dark" className="nav__link" onClick={closeMobileNav}>DARK</Link>
-            <Link to="/product" className="nav__link" onClick={closeMobileNav}>SHOP</Link>
+          <div className={mobileNav ? "mobile__menu__container flex flex-col p-5" : " hidden w-[0%] opacity-0"}>
+            <Link to="/" className="nav__link" onClick={closeMobileNav}>
+              HOME
+            </Link>
+            <Link to="/dark" className="nav__link" onClick={closeMobileNav}>
+              DARK
+            </Link>
+            <Link to="/product" className="nav__link" onClick={closeMobileNav}>
+              SHOP
+            </Link>
           </div>
         </div>
       </div>

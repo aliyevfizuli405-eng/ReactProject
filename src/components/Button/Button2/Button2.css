@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+.button__default2{
+    max-width: 300px;
+    padding: 15px 50px;
+}
+

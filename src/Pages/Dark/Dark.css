@@ -1,0 +1,8 @@
+.swiperbg{
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.GamesSwiper{
+    z-index: -1;
+}

@@ -15,7 +15,7 @@ import { FreeMode, Pagination } from 'swiper/modules';
 export const Sponsors = ()=>{
   return (
     <>
-    <h2 className="title text-light" style={{textAlign:"center"}}>Partners</h2>
+    <h2 className="title text-white text-4xl" style={{textAlign:"center"}}>Partners</h2>
     <Swiper
         slidesPerView={5}
         spaceBetween={0}
@@ -34,7 +34,6 @@ export const Sponsors = ()=>{
         <SwiperSlide><img className='sponsorImage' src="https://wp.nkdev.info/youplay/wp-content/uploads/2015/10/partner-logo-3.png" alt="" /></SwiperSlide>
         <SwiperSlide><img className='sponsorImage' src="https://wp.nkdev.info/youplay/wp-content/uploads/2015/10/partner-logo-5.png" alt="" /></SwiperSlide>
         <SwiperSlide><img className='sponsorImage' src="https://wp.nkdev.info/youplay/wp-content/uploads/2015/10/partner-logo-8.png" alt="" /></SwiperSlide>
-        
         </Swiper>
     </>
   );
