@@ -6,7 +6,7 @@ import "./Nav.css";
 import { Search } from "../Search/Search";
 
 // Lucide Icons
-import { MenuIcon, X } from "lucide-react";
+import { MenuIcon, X,ShoppingCart} from "lucide-react";
 
 export const SearchContext = createContext();
 
@@ -145,7 +145,7 @@ export const Nav = () => {
             </div>
 
             {/* RIGHT SIDE (desktop) */}
-            <div className="navbar__right hidden md:flex">
+            <div className="navbar__right hidden md:flex md:gap-2">
               <div className="dropdown">
                 <a href="" className="nav__link">
                   THEME<i className="ri-arrow-drop-down-fill"></i>
@@ -166,12 +166,10 @@ export const Nav = () => {
               </div>
 
               <div className="dropdown">
-                <a href="" className="nav__link">
-                  <i className="bi bi-person-fill"></i>
-                  <i className="ri-arrow-drop-down-fill"></i>
-                  <br />
-                  <span className="opacity-0">Salam</span>
-                </a>
+                <button className="bg-purple-800 hover:bg-purple-900 menubtns rounded-full p-2">
+                    <i className="bi bi-person-fill text-white"></i>
+                    <i className="ri-arrow-drop-down-fill text-white"></i>
+                </button>
                 <div className="dropdownMenu flex-col">
                   <a className="dropdownLink" href="">
                     Login
@@ -184,25 +182,22 @@ export const Nav = () => {
                   </a>
                 </div>
               </div>
-
-              <button
-                className="flex  p-0"
-                onClick={() => {
-                  setSearched(!searched);
-                }}
-              >
-                <i className="bx bx-search text-white"></i>
-                <br />
-                <span className="opacity-0">salam</span>
-              </button>
-
-              <button>
-                <a href="" className="nav__link">
-                  <i className="bi bi-cart"></i>
-                </a>
-                <br />
-                <span className="opacity-0">salam</span>
-              </button>
+              <div className="">
+                <button
+                  className="flex items-center justify-center bg-purple-800 hover:bg-purple-900 menubtns p-3 rounded-full"
+                  onClick={() => {
+                    setSearched(!searched);
+                  }}
+                >
+                  <i className="bx bx-search text-white"></i>
+                </button>
+              </div>
+              
+              <div className="">
+                <button className="flex items-center justify-center bg-purple-800 hover:bg-purple-900 menubtns rounded-full   p-3 ">
+                  <ShoppingCart color="white" size={20}/>
+                </button>
+              </div>
             </div>
 
             {/* MOBILE */}
@@ -290,12 +285,12 @@ export const Nav = () => {
       </>
     );
   } else {
-    return( 
+    return (
       <>
-        <SearchContext.Provider value={{searched,setSearched}}>
-          <Search searched={{searched,setSearched}} />
+        <SearchContext.Provider value={{ searched, setSearched }}>
+          <Search searched={{ searched, setSearched }} />
         </SearchContext.Provider>
       </>
-    )
+    );
   }
 };

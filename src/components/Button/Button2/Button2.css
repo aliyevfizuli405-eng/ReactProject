@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
 .button__default2{
-    transition: all 350ms ease-out;
+    transition: all 350ms;
 }
 

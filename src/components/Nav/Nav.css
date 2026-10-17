@@ -52,7 +52,9 @@ nav{
     transition: all;
     z-index: -1;
 }
-
+.menubtns{
+    transition: all 250ms ease-in;
+}
 
 
 
