@@ -15,7 +15,6 @@ export const QualityCards = ({ info }) => {
                 />
             ))}
             </div>
-            
         </div>
     )
 }

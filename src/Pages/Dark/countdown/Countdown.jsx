@@ -13,7 +13,7 @@ export const Countdown = () => {
   }, []);
   return (
     <>
-      <p className="text-white text-[50px] text-center">The Witcher 3: Wild Hunt</p>
+      <p className="text-white text-[28px] md:text-[48px] text-center">The Witcher 3: Wild Hunt</p>
 
       <div className="gameCounterTimer grid grid-cols-12 justify-center p-[60px] flex-wrap gap-4">
         <div className="gameCounterTime text-white text-[50px] col-span-12 sm:col-span-3  p-5 flex justify-center items-center bg-[#08032535] -skew-x-6 ">

@@ -2,7 +2,7 @@
     background-image: url("./../../assets/image/ps2.webp");
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 80vh;
+    min-height: 80dvh;
 }
 .introduction__content{
     padding-top: 60px;

@@ -119,14 +119,14 @@ export const Dark = () => {
               </button>
             </Swiper>
             <div
-              className="herobgInfo flex-wrap"
+              className="herobgInfo flex-wrap p-5"
               style={{
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
               }}
             >
-              <p className="text-white text-[50px]">Games</p>
+              <p className="text-white text-[30px] md:text-[50px]">Games</p>
               
               <Button2 text="See more" />
             </div>
@@ -203,14 +203,14 @@ export const Dark = () => {
             </Swiper>
           </div>
           <div
-            className="herobgInfo flex-wrap"
+            className="herobgInfo flex-wrap p-4"
             style={{
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
             }}
           >
-            <p className="title text-white text-[50px]">Discounts</p>
+            <p className="title text-white text-[30px] md:text-[50px]">Discounts</p>
             <Button2 text="See more" />
           </div>
         </div>

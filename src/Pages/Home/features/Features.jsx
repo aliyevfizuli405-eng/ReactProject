@@ -1,17 +1,12 @@
-import {QualityCards} from "@components/Cards/QualityCards/QualityCards"
+import { QualityCards } from "@components/Cards/QualityCards/QualityCards";
 
-import { TriangleAlert,Clock,Boxes } from "lucide-react";
+import { TriangleAlert, Clock, Boxes } from "lucide-react";
 
 export const Features = () => {
   return (
     <section className="features">
       <div className="features__content flex flex-col justify-center items-center p-10 text-white">
-        <h2
-          className="title font-medium text-left"
-          style={{ fontSize: "40px" }}
-        >
-          A BIT MORE FEATURES
-        </h2>
+        <h2 className="title font-medium text-left text-[20px] md:text-[35px]">A BIT MORE FEATURES</h2>
         <QualityCards
           info={[
             {
