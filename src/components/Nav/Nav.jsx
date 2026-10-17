@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
+import { createContext } from "react";
 import { Link } from "react-router";
 import logo from "@/assets/image/logo-light.png";
 import "./Nav.css";
+import { Search } from "../Search/Search";
 
 // Lucide Icons
 import { MenuIcon, X } from "lucide-react";
+
+export const SearchContext = createContext();
 
 export const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -25,10 +29,12 @@ export const Nav = () => {
 
   const closeMobileNav = () => setMobileNav(false);
 
-  return (
-    <>
-      <div className={searched ? "hidden" : "block"}>
-        <nav className={scrolled ? "scrolled__nav p-5 flex z-10 " : "nav p-5 z-10"}>
+  if (!searched) {
+    return (
+      <>
+        <nav
+          className={scrolled ? "scrolled__nav p-5 flex z-10 " : "nav p-5 z-10"}
+        >
           <div className="navbar flex justify-between items-center gap-2 p-3 container-md">
             <div className="navbar__left flex justify-center items-center">
               <Link to="/">
@@ -229,31 +235,67 @@ export const Nav = () => {
                 >
                   SHOP
                 </Link>
+                <div className="dropdown">
+                  <a href="" className="nav__link">
+                    <i className="bi bi-person-fill"></i>
+                    <i className="ri-arrow-drop-down-fill"></i>
+                    <br />
+                    <span className="opacity-0">Salam</span>
+                  </a>
+                  <div className="dropdownMenu flex-col">
+                    <a className="dropdownLink" href="">
+                      Login
+                    </a>
+                    <a className="dropdownLink" href="">
+                      Register
+                    </a>
+                    <a className="dropdownLink" href="">
+                      Profile
+                    </a>
+                  </div>
+                </div>
+                <button
+                  className="flex justify-start  p-0"
+                  onClick={() => {
+                    setSearched(!searched);
+                  }}
+                >
+                  <i className="bx bx-search text-white"></i>
+                  <br />
+                  <span className="opacity-0">salam</span>
+                </button>
+                <button>
+                  <a href="" className="nav__link">
+                    <i className="bi bi-cart"></i>
+                  </a>
+                  <br />
+                  <span className="opacity-0">salam</span>
+                </button>
               </div>
             </div>
           </div>
         </nav>
-      </div>
-      <div
-        className={
-          searched
-            ? "block absolute bg-[#080325] flex justify-center items-center w-[100vw] h-[100%] overflow-hidden z-10"
-            : "hidden"
-        }
-      >
-        <input
-          placeholder="Site Search"
-          className="text-white bg-[#ffffff80] rounded-xl w-[80%] p-6 "
-        />
-        <button
-          className="absolute top-10 left-[90%]"
-          onClick={() => {
-            setSearched(!searched);
-          }}
+        <div
+          className={
+            searched
+              ? "block absolute bg-[#080325] flex justify-center items-center w-[100vw] h-[100%] overflow-hidden z-10"
+              : "hidden"
+          }
         >
-          <X color="white" size={50} />
-        </button>
-      </div>
-    </>
-  );
+          <input
+            placeholder="Site Search"
+            className="text-white bg-[#ffffff80] rounded-xl w-[80%] p-6 "
+          />
+        </div>
+      </>
+    );
+  } else {
+    return( 
+      <>
+        <SearchContext.Provider value={{searched,setSearched}}>
+          <Search searched={{searched,setSearched}} />
+        </SearchContext.Provider>
+      </>
+    )
+  }
 };

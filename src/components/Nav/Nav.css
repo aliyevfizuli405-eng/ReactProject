@@ -46,10 +46,11 @@ nav{
     width: 100%;
     position: absolute;
     top: 100%;
-    left: 83.5%;
+    left: 0;
     background-color:#080325CC;
     opacity: 1;
     transition: all;
+    z-index: -1;
 }
 
 

@@ -1,22 +1,17 @@
-import { Nav } from "@components/Nav/Nav";
-import { ProductHerobg } from "@/Pages/Product/productHerobg/ProductHerobg";
-import { SwiperProduct } from "@/Pages/Product/swiperProduct/SwiperProduct.jsx";
-import { useState } from "react";
-import { GameInfo} from "../gameinfo/GameInfo";
-import { games } from "../../../js/values";
+import { ProductHerobg } from "../productHerobg/ProductHerobg";
+import { SwiperProduct } from "../swiperProduct/SwiperProduct";
+import { GameInfo } from "../gameinfo/GameInfo";
+import { GameContext } from "../Product";
+import { useContext } from "react";
 
-
-export const ProductStyle = ({game}) => {
+export const ProductStyle = () => {
+  const game= useContext(GameContext)
   return (
     <>
-      <ProductHerobg
-        bgImage={game.bgImage}
-        title={game.title}
-        price={game.price}
-      />
+      <ProductHerobg bgImage={game.bgImage} title={game.title} price={game.price} />
       <main className="container-md bg-[#080325]">
         <SwiperProduct />
-        <GameInfo game={game}/>
+        <GameInfo game={game} />
       </main>
     </>
   );

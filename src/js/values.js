@@ -1,4 +1,3 @@
-
 export const games = [
   {
     id: 1,
@@ -14,25 +13,14 @@ export const games = [
       "Yunan tanrılarından qisas aldıqdan sonra Kratos Norse mifologiyasının sərt dünyasında yeni həyat qurub. Həyat yoldaşı Faye vəfat edəndən sonra o, onun külünü aləmlərin ən hündür zirvəsində səpmək üçün oğlu Atreus ilə təhlükəli səfərə çıxır. Oyun kəsintisiz tək kamera planı ilə təqdim olunur və bu, döyüşləri daha yaxın, ağır və təsirli hiss etdirir. Leviathan baltası, Chaos Blades və Atreus-un oxları ilə müxtəlif düşmən və bosslarla vuruşur, doqquz aləmin bir neçəsini kəşf edirsən. Hekayə ata-oğul münasibətini, itkini və keçmişlə barışmaq mövzusunu emosional şəkildə işləyir. Silah və zireh təkmilləşdirmələri, əlavə tapşırıqlar və gizli bosslar oyunu uzun müddət maraqlı saxlayır. Nəticədə bu oyun həm aksiyon, həm də güclü hekayə axtaranlar üçün seriyanın ən uğurlu yenidən başlanğıclarından biridir.",
     comprehensiveReviews: "Overwhelmingly Positive",
     tags: ["Action", "Adventure", "Mythology", "Singleplayer"],
-
     systemRequirements: {
-      minimum: {
-        os: "Windows 10 64-bit",
-        processor: "Intel Core i5-2500K / AMD Ryzen 3 1200",
-        memory: "8 GB RAM",
-        graphics: "NVIDIA GTX 960 (4 GB) / AMD R9 290X (4 GB)",
-        directX: "Version 11",
-        storage: "70 GB available space"
-      },
-      recommended: {
-        os: "Windows 10 64-bit",
-        processor: "Intel Core i5-6600K / AMD Ryzen 5 2400G",
-        memory: "8 GB RAM",
-        graphics: "NVIDIA GTX 1060 (6 GB) / AMD RX 570 (4 GB)",
-        directX: "Version 11",
-        storage: "70 GB SSD"
-      }
-    }
+      os: "Windows 10 64-bit",
+      processor: "Intel Core i5-2500K / AMD Ryzen 3 1200",
+      memory: "8 GB RAM",
+      graphics: "NVIDIA GTX 960 (4 GB) / AMD R9 290X (4 GB)",
+      directX: "Version 11",
+      storage: "70 GB available space",
+    },
   },
 
   {
@@ -51,23 +39,13 @@ export const games = [
     tags: ["Action RPG", "Souls-like", "Mythology", "Singleplayer"],
 
     systemRequirements: {
-      minimum: {
-        os: "Windows 10 64-bit",
-        processor: "Intel Core i5-8400 / AMD Ryzen 5 1600",
-        memory: "16 GB RAM",
-        graphics: "NVIDIA GTX 1060 (6 GB) / AMD RX 580 (8 GB)",
-        directX: "Version 11",
-        storage: "130 GB HDD"
-      },
-      recommended: {
-        os: "Windows 10 64-bit",
-        processor: "Intel Core i7-9700 / AMD Ryzen 5 5500",
-        memory: "16 GB RAM",
-        graphics: "NVIDIA RTX 2060 / AMD RX 5700 XT",
-        directX: "Version 12",
-        storage: "130 GB SSD"
-      }
-    }
+      os: "Windows 10 64-bit",
+      processor: "Intel Core i5-8400 / AMD Ryzen 5 1600",
+      memory: "16 GB RAM",
+      graphics: "NVIDIA GTX 1060 (6 GB) / AMD RX 580 (8 GB)",
+      directX: "Version 11",
+      storage: "130 GB HDD",
+    },
   },
 
   {
@@ -86,23 +64,13 @@ export const games = [
     tags: ["Open World", "Action", "Crime", "Retro"],
 
     systemRequirements: {
-      minimum: {
-        os: "Windows 98 / ME / 2000 / XP",
-        processor: "800 MHz Intel Pentium III / AMD Athlon",
-        memory: "128 MB RAM",
-        graphics: "32 MB DirectX 9 compatible GPU",
-        directX: "DirectX 9.0",
-        storage: "1.5 GB available space"
-      },
-      recommended: {
-        os: "Windows 2000 / XP",
-        processor: "Intel Pentium IV / AMD Athlon XP",
-        memory: "256 MB RAM",
-        graphics: "64 MB DirectX 9 compatible GPU",
-        directX: "DirectX 9.0",
-        storage: "1.5 GB available space"
-      }
-    }
+      os: "Windows 98 / ME / 2000 / XP",
+      processor: "800 MHz Intel Pentium III / AMD Athlon",
+      memory: "128 MB RAM",
+      graphics: "32 MB DirectX 9 compatible GPU",
+      directX: "DirectX 9.0",
+      storage: "1.5 GB available space",
+    },
   },
 
   {
@@ -121,23 +89,13 @@ export const games = [
     tags: ["Hack and Slash", "Action", "Demons", "Singleplayer"],
 
     systemRequirements: {
-      minimum: {
-        os: "Windows 10 64-bit",
-        processor: "Intel Core i5-4460 / AMD FX-6300",
-        memory: "8 GB RAM",
-        graphics: "NVIDIA GTX 760 / AMD R7 260x",
-        directX: "Version 11",
-        storage: "35 GB available space"
-      },
-      recommended: {
-        os: "Windows 10 64-bit",
-        processor: "Intel Core i7-3770 / AMD FX-9590",
-        memory: "8 GB RAM",
-        graphics: "NVIDIA GTX 1060 / AMD RX 480",
-        directX: "Version 11",
-        storage: "35 GB available space"
-      }
-    }
+      os: "Windows 10 64-bit",
+      processor: "Intel Core i5-4460 / AMD FX-6300",
+      memory: "8 GB RAM",
+      graphics: "NVIDIA GTX 760 / AMD R7 260x",
+      directX: "Version 11",
+      storage: "35 GB available space",
+    },
   },
 
   {
@@ -156,23 +114,13 @@ export const games = [
     tags: ["Open World", "Action", "Crime", "Classic"],
 
     systemRequirements: {
-      minimum: {
-        os: "Windows 2000 / XP",
-        processor: "1 GHz Pentium III / AMD Athlon",
-        memory: "256 MB RAM",
-        graphics: "64 MB DirectX 9 compatible GPU",
-        directX: "DirectX 9.0",
-        storage: "3.6 GB available space"
-      },
-      recommended: {
-        os: "Windows 2000 / XP",
-        processor: "Intel Pentium 4 / AMD Athlon XP",
-        memory: "384 MB RAM",
-        graphics: "128 MB DirectX 9 compatible GPU",
-        directX: "DirectX 9.0",
-        storage: "4.7 GB available space"
-      }
-    }
+      os: "Windows 2000 / XP",
+      processor: "1 GHz Pentium III / AMD Athlon",
+      memory: "256 MB RAM",
+      graphics: "64 MB DirectX 9 compatible GPU",
+      directX: "DirectX 9.0",
+      storage: "3.6 GB available space",
+    },
   },
 
   {
@@ -191,23 +139,13 @@ export const games = [
     tags: ["Fighting", "Gore", "Multiplayer", "Action"],
 
     systemRequirements: {
-      minimum: {
-        os: "Windows 10 64-bit",
-        processor: "Intel Core i5-6600 / AMD Ryzen 3 3100",
-        memory: "8 GB RAM",
-        graphics: "NVIDIA GTX 980 / AMD RX 470",
-        directX: "Version 12",
-        storage: "100 GB available space"
-      },
-      recommended: {
-        os: "Windows 10 64-bit",
-        processor: "Intel Core i5-8400 / AMD Ryzen 5 3600",
-        memory: "16 GB RAM",
-        graphics: "NVIDIA RTX 2080 Ti / AMD RX 5700 XT",
-        directX: "Version 12",
-        storage: "100 GB SSD"
-      }
-    }
+      os: "Windows 10 64-bit",
+      processor: "Intel Core i5-6600 / AMD Ryzen 3 3100",
+      memory: "8 GB RAM",
+      graphics: "NVIDIA GTX 980 / AMD RX 470",
+      directX: "Version 12",
+      storage: "100 GB available space",
+    },
   },
 
   {
@@ -226,23 +164,13 @@ export const games = [
     tags: ["Superhero", "Open World", "Action", "Singleplayer"],
 
     systemRequirements: {
-      minimum: {
-        os: "Windows 10 64-bit",
-        processor: "Intel Core i3-4160 / AMD equivalent",
-        memory: "8 GB RAM",
-        graphics: "NVIDIA GTX 950 / AMD RX 470",
-        directX: "Version 12",
-        storage: "75 GB available space"
-      },
-      recommended: {
-        os: "Windows 10 64-bit",
-        processor: "Intel Core i5-4670 / AMD Ryzen 5 1600",
-        memory: "16 GB RAM",
-        graphics: "NVIDIA GTX 1060 (6 GB) / AMD RX 580 (8 GB)",
-        directX: "Version 12",
-        storage: "75 GB SSD"
-      }
-    }
+      os: "Windows 10 64-bit",
+      processor: "Intel Core i3-4160 / AMD equivalent",
+      memory: "8 GB RAM",
+      graphics: "NVIDIA GTX 950 / AMD RX 470",
+      directX: "Version 12",
+      storage: "75 GB available space",
+    },
   },
 
   {
@@ -261,22 +189,12 @@ export const games = [
     tags: ["Survival Horror", "Action", "Zombies", "Singleplayer"],
 
     systemRequirements: {
-      minimum: {
-        os: "Windows 10 64-bit",
-        processor: "Intel Core i5-7500 / AMD Ryzen 3 1200",
-        memory: "8 GB RAM",
-        graphics: "NVIDIA GTX 1050 Ti / AMD RX 560",
-        directX: "Version 12",
-        storage: "60 GB available space"
-      },
-      recommended: {
-        os: "Windows 10 64-bit",
-        processor: "Intel Core i7-8700 / AMD Ryzen 5 3600",
-        memory: "16 GB RAM",
-        graphics: "NVIDIA GTX 1070 / AMD RX 5700",
-        directX: "Version 12",
-        storage: "60 GB SSD"
-      }
-    }
-  }
+      os: "Windows 10 64-bit",
+      processor: "Intel Core i5-7500 / AMD Ryzen 3 1200",
+      memory: "8 GB RAM",
+      graphics: "NVIDIA GTX 1050 Ti / AMD RX 560",
+      directX: "Version 12",
+      storage: "60 GB available space",
+    },
+  },
 ];

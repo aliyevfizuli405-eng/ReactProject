@@ -43,23 +43,9 @@ export const Dark = () => {
     },
   ];
 
-  // For Asycn function to get games for swiper
-  const [game, setGames] = useState([]);
-
   // Swiper reference
   const swiperRef = useRef(null);
   const swiperRef2 = useRef(null);
-
-  // Getting Games
-  useEffect(() => {
-    async function GetGames() {
-      const res = await fetch("http://localhost:3000/games");
-      const data = await res.json();
-
-      setGames(data);
-    }
-    GetGames();
-  }, []);
 
   return (
     <>
@@ -141,7 +127,7 @@ export const Dark = () => {
               }}
             >
               <p className="text-white text-[50px]">Games</p>
-
+              
               <Button2 text="See more" />
             </div>
           </div>

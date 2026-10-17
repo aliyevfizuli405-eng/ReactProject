@@ -4,7 +4,10 @@ import { Home } from "@/Pages/Home/Home";
 import { Dark } from "@/Pages/Dark/Dark";
 import { Product } from "@/Pages/Product/Product";
 
+import { games } from "./js/values";
+
 import "./App.css";
+
 
 export const App = () => {
   return (
@@ -13,6 +16,7 @@ export const App = () => {
         <Route index element={<Home />} />
         <Route path="dark" element={<Dark />} />
         <Route path="product" element={<Product/>}/>
+        <Route path="product/:id" element={<Product/>}/>
         <Route path="*" element={<h1 className="text-light p-5">404 - Page not found</h1>} />
       </Route>
     </Routes>
